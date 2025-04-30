@@ -1,0 +1,372 @@
+/*
+ * MindSpeak - Home Page Specific Styles
+ * Version: 1.0.0
+ * Author: MindSpeak Team
+ */
+
+/* ======================================================
+   HERO SECTION ENHANCEMENTS
+   ====================================================== */
+   #hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 60rem;
+    height: 60rem;
+    border-radius: 50%;
+    background: radial-gradient(rgba(142, 237, 199, 0.2), rgba(142, 237, 199, 0));
+    z-index: 0;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    left: -10%;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    background: radial-gradient(rgba(79, 176, 255, 0.2), rgba(79, 176, 255, 0));
+    z-index: 0;
+}
+
+#hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-image img {
+    border-radius: 2rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+}
+
+.hero-image:hover img {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.15);
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--primary-dark) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content h2 {
+    color: var(--dark);
+    font-weight: 500;
+}
+
+/* ======================================================
+   ABOUT SECTION
+   ====================================================== */
+#about {
+    position: relative;
+    background-color: var(--light);
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.about-text {
+    line-height: 1.8;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2.5rem;
+}
+
+.feature {
+    padding: 3rem;
+    border-radius: 1rem;
+    background-color: var(--light);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary);
+}
+
+.feature-icon {
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(79, 176, 255, 0.1);
+    color: var(--primary);
+    font-size: 3rem;
+    transition: all 0.3s ease;
+}
+
+.feature:hover .feature-icon {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.feature h3 {
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+}
+
+.feature p {
+    color: var(--gray-dark);
+    flex-grow: 1;
+}
+
+/* ======================================================
+   DOWNLOAD SECTION
+   ====================================================== */
+#download {
+    background-color: var(--gray);
+    position: relative;
+    overflow: hidden;
+}
+
+#download::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/pattern-dots.png');
+    opacity: 0.05;
+    z-index: 0;
+}
+
+#download .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.download-content {
+    flex: 1;
+}
+
+.download-content h2 {
+    margin-bottom: 2rem;
+    font-size: 3.6rem;
+}
+
+.download-content p {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    color: var(--gray-dark);
+}
+
+.download-buttons {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.download-info {
+    font-size: 1.4rem;
+    color: var(--gray-dark);
+}
+
+.btn-download {
+    min-width: 20rem;
+    padding: 1.8rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-download.android {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.btn-download.android:hover {
+    background-color: var(--primary-dark);
+}
+
+.btn-download.soon {
+    background-color: var(--gray-dark);
+    color: var(--light);
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+.download-image {
+    flex: 1;
+    position: relative;
+}
+
+.download-image img {
+    border-radius: 2rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.download-image::after {
+    content: '';
+    position: absolute;
+    bottom: -10%;
+    right: -5%;
+    width: 15rem;
+    height: 15rem;
+    background: url('../images/qr-code.png') no-repeat center center / contain;
+    z-index: 2;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.5s ease;
+}
+
+.download-image:hover::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ======================================================
+   CTA SECTION ENHANCEMENTS
+   ====================================================== */
+#cta {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--light);
+    text-align: center;
+    padding: 8rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#cta::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    right: -5%;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    z-index: 0;
+}
+
+#cta::after {
+    content: '';
+    position: absolute;
+    bottom: -15%;
+    left: -5%;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    z-index: 0;
+}
+
+#cta .container {
+    position: relative;
+    z-index: 1;
+}
+
+#cta h2 {
+    font-size: 3.6rem;
+    color: var(--light);
+    margin-bottom: 2rem;
+}
+
+#cta p {
+    font-size: 1.8rem;
+    max-width: 70rem;
+    margin: 0 auto 3.5rem;
+    opacity: 0.9;
+}
+
+#cta .cta-buttons {
+    justify-content: center;
+}
+
+/* ======================================================
+   RESPONSIVE STYLES
+   ====================================================== */
+@media (max-width: 992px) {
+    .download-buttons {
+        flex-direction: column;
+    }
+    
+    #download .container {
+        flex-direction: column;
+    }
+    
+    .download-content {
+        text-align: center;
+    }
+    
+    .download-buttons {
+        justify-content: center;
+    }
+    
+    .download-image::after {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+    
+    #hero::before,
+    #hero::after {
+        width: 30rem;
+        height: 30rem;
+    }
+    
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 3.2rem;
+    }
+    
+    .feature {
+        padding: 2rem;
+    }
+    
+    .feature-icon {
+        width: 6rem;
+        height: 6rem;
+        font-size: 2.4rem;
+    }
+    
+    #cta h2 {
+        font-size: 3rem;
+    }
+}

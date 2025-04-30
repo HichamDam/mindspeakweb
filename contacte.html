@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte | MindSpeak</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/mindspeak-logo.png" alt="MindSpeak Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html">Inici</a></li>
+                    <li><a href="funcionament.html">Com funciona</a></li>
+                    <li><a href="negoci.html">Model de negoci</a></li>
+                    <li><a href="media.html">Mèdia</a></li>
+                    <li><a href="equip.html">Equip</a></li>
+                    <li><a href="contacte.html" class="active">Contacte</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button class="active">CA</button>
+                <button onclick="window.location.href='es/contacto.html'">ES</button>
+                <button onclick="window.location.href='en/contact.html'">EN</button>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section id="page-header">
+        <div class="container">
+            <h1>Contacta amb Nosaltres</h1>
+            <p>Estem aquí per respondre les teves preguntes i escoltar els teus suggeriments</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Informació de Contacte</h2>
+                    <p>Utilitza qualsevol d'aquests canals per posar-te en contacte amb l'equip de MindSpeak. Intentarem respondre tan aviat com sigui possible.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Correu Electrònic</h3>
+                                <p><a href="mailto:info@mindspeak-app.com"> contact@inspladelestany.cat</a></p>
+                                <p class="detail-note">Per a consultes generals i suport</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Telèfon</h3>
+                                <p><a href="tel:+34972580793">+34 972 58 07 93</a></p>
+                                <p class="detail-note">Dilluns a divendres, 9:00 - 18:00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Adreça</h3>
+                                <p>Carrer de Jaume Farriol i Montserrat, 31,</p>
+                                <p> 17820 Banyoles, Girona, Espanya</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Suport Tècnic</h3>
+                                <p><a href="mailto:suport@mindspeak-app.com">suport@mindspeak-app.com</a></p>
+                                <p class="detail-note">Per a problemes amb l'aplicació</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h3>Xarxes Socials</h3>
+                        <div class="social-icons">
+                            <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-container">
+                    <h2>Envia'ns un Missatge</h2>
+                    <p>Omple el següent formulari i ens posarem en contacte amb tu tan aviat com sigui possible.</p>
+                    
+                    <form id="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nom Complet <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correu Electrònic <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telèfon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Assumpte <span class="required">*</span></label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Selecciona un assumpte</option>
+                                <option value="info">Informació General</option>
+                                <option value="support">Suport Tècnic</option>
+                                <option value="feedback">Feedback i Suggeriments</option>
+                                <option value="collaboration">Col·laboració</option>
+                                <option value="other">Altre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Missatge <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">He llegit i accepto la <a href="privacy.html">política de privacitat</a> <span class="required">*</span></label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Enviar Missatge</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faqs">
+        <div class="container">
+            <div class="section-header">
+                <h2>Preguntes Freqüents</h2>
+                <p>Respostes a les preguntes més comunes sobre MindSpeak</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Què és MindSpeak?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>MindSpeak és una aplicació mòbil dissenyada per ajudar a les persones amb Trastorn de l'Espectre Autista (TEA) a expressar les seves emocions de manera fàcil i visual. L'aplicació també ofereix eines per als supervisors i familiars per fer un seguiment de l'estat emocional dels usuaris.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Com puc descarregar MindSpeak?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Actualment, MindSpeak està disponible com a prototip per a dispositius Android. Pots descarregar-lo des de la nostra pàgina d'inici o fent clic <a href="downloads/mindspeak-prototype.apk">aquí</a>. La versió per a iOS està en desenvolupament i estarà disponible properament.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>L'aplicació és gratuïta?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>MindSpeak ofereix una versió gratuïta bàsica per a usuaris individuals amb funcionalitats limitades. També tenim plans de subscripció per a famílies i llicències per a centres educatius i terapèutics que ofereixen funcionalitats avançades. Pots consultar més detalls a la nostra secció de <a href="negoci.html">Model de Negoci</a>.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quins dispositius són compatibles amb MindSpeak?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Actualment, MindSpeak és compatible amb dispositius Android amb versió 8.0 o superior. Estem treballant en la versió per a iOS i una versió web que estaran disponibles en els propers mesos.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Com es protegeixen les dades dels usuaris?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A MindSpeak, prenem molt seriosament la privacitat i seguretat de les dades. Utilitzem encriptació d'extrem a extrem per a totes les dades sensibles, i complim amb el Reglament General de Protecció de Dades (RGPD) de la UE. Pots consultar més informació a la nostra <a href="privacy.html">Política de Privacitat</a>.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Puc col·laborar amb el projecte MindSpeak?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Estem oberts a col·laboracions amb professionals, centres educatius, associacions i altres entitats interessades en millorar la comunicació emocional de les persones amb TEA. Si vols col·laborar, pots contactar-nos a través del formulari d'aquesta pàgina o enviant un correu a <a href="mailto:collaborations@mindspeak-app.com">collaborations@mindspeak-app.com</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>On estem</h2>
+                <p>Visita'ns a les nostres oficines</p>
+            </div>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2959.9692362546675!2d2.763032675956707!3d42.10812967121745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12bac2118200becf%3A0x1071a98c88dba24a!2sInstitut%20Pla%20de%20l&#39;Estany!5e0!3m2!1sen!2ses!4v1741694410012!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta">
+        <div class="container">
+            <h2>No esperis més per provar MindSpeak</h2>
+            <p>Descarrega l'aplicació ara i descobreix com pot millorar la comunicació emocional.</p>
+            <div class="cta-buttons">
+                <a href="downloads/mindspeak-prototype.apk" class="btn btn-primary">Descarregar App</a>
+                <a href="funcionament.html" class="btn btn-secondary">Saber Més</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/mindspeak-logo-white.png" alt="MindSpeak Logo">
+                    <p>Fent les emocions visibles</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h3>Navegació</h3>
+                        <ul>
+                            <li><a href="index.html">Inici</a></li>
+                            <li><a href="funcionament.html">Com funciona</a></li>
+                            <li><a href="negoci.html">Model de negoci</a></li>
+                            <li><a href="media.html">Mèdia</a></li>
+                            <li><a href="equip.html">Equip</a></li>
+                            <li><a href="contacte.html">Contacte</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Segueix-nos</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contacte</h3>
+                    <p><i class="fas fa-envelope"></i> contact@inspladelestany.cat</p>
+                    <p><i class="fas fa-phone"></i> +34 972 58 07 93</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MindSpeak. Tots els drets reservats.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Política de privacitat</a>
+                    <a href="terms.html">Termes d'ús</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>

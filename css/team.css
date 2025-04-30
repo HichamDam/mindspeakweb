@@ -1,0 +1,641 @@
+/*
+ * MindSpeak - Team Page Specific Styles
+ * Version: 1.0.0
+ * Author: MindSpeak Team
+ */
+
+/* ======================================================
+   TEAM INTRO SECTION
+   ====================================================== */
+   #team-intro {
+    background-color: var(--light);
+    position: relative;
+}
+
+.team-intro-content {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.team-intro-text {
+    flex: 1;
+}
+
+.team-intro-text h2 {
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.team-intro-text h2::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: var(--primary);
+    border-radius: 0.2rem;
+}
+
+.team-intro-text p {
+    color: var(--gray-dark);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.team-intro-image {
+    flex: 1;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.team-intro-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.team-intro-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.team-intro-image:hover img {
+    transform: scale(1.05);
+}
+
+/* ======================================================
+   TEAM MEMBERS SECTION
+   ====================================================== */
+#team-members {
+    background-color: var(--gray);
+    position: relative;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 3rem;
+}
+
+.team-card {
+    height: 420px;
+    perspective: 1000px;
+}
+
+.team-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.team-card-inner.flipped {
+    transform: rotateY(180deg);
+}
+
+.team-card-front,
+.team-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-card-front {
+    background-color: var(--light);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.team-card-back {
+    background-color: var(--primary);
+    color: var(--light);
+    transform: rotateY(180deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+.team-image {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, b0, 0, 0.1);
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+}
+
+.team-card-back h3 {
+    color: var(--light);
+}
+
+.team-role {
+    color: var(--primary-dark);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.team-card-back .team-role {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.team-bio {
+    color: var(--gray-dark);
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.team-card-back .team-bio {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.team-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.team-skills span {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--light);
+    padding: 0.5rem 1.2rem;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.team-contact {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.team-contact a {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    transition: all 0.3s ease;
+}
+
+.team-contact a:hover {
+    background-color: var(--light);
+    color: var(--primary);
+}
+
+/* ======================================================
+   TEAM ROLES SECTION
+   ====================================================== */
+#team-roles {
+    background-color: var(--light);
+    position: relative;
+}
+
+.roles-table {
+    overflow-x: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 1rem;
+    margin-top: 4rem;
+}
+
+.roles-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.roles-table th,
+.roles-table td {
+    padding: 1.5rem 2rem;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.roles-table th {
+    background-color: var(--primary);
+    color: var(--light);
+    font-weight: 600;
+    position: relative;
+}
+
+.roles-table th:first-child {
+    border-top-left-radius: 1rem;
+}
+
+.roles-table th:last-child {
+    border-top-right-radius: 1rem;
+}
+
+.roles-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.roles-table tbody tr:hover {
+    background-color: rgba(79, 176, 255, 0.05);
+}
+
+.roles-table td ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.roles-table td ul li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.roles-table td ul li::before {
+    content: '\f054';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+.sort-indicator {
+    margin-left: 0.5rem;
+}
+
+/* ======================================================
+   METHODOLOGIES SECTION
+   ====================================================== */
+#methodologies {
+    background-color: var(--gray);
+    position: relative;
+}
+
+.methodology-content {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.methodology-text {
+    flex: 1;
+}
+
+.methodology-text h3 {
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.methodology-text h3::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: var(--primary);
+    border-radius: 0.2rem;
+}
+
+.methodology-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.methodology-list li {
+    position: relative;
+    padding-left: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.methodology-list li::before {
+    content: '\f058';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    color: var(--primary);
+    font-size: 1.8rem;
+}
+
+.methodology-list li strong {
+    color: var(--dark);
+}
+
+.methodology-image {
+    flex: 1;
+}
+
+.methodology-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+    margin-top: 1.5rem;
+    color: var(--gray-dark);
+    text-align: center;
+    font-style: italic;
+}
+
+/* ======================================================
+   TUTORS SECTION
+   ====================================================== */
+#tutors {
+    background-color: var(--light);
+    position: relative;
+}
+
+.tutors-grid {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+.tutor-card {
+    background-color: var(--light);
+    border-radius: 1rem;
+    padding: 3rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.tutor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary);
+}
+
+.tutor-image {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tutor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tutor-info h3 {
+    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+}
+
+.tutor-role {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.tutor-bio {
+    color: var(--gray-dark);
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.tutors-message {
+    background-color: rgba(79, 176, 255, 0.05);
+    border-radius: 1rem;
+    padding: 3rem;
+    margin-top: 5rem;
+    text-align: center;
+    border-left: 4px solid var(--primary);
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.tutors-message.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tutors-message blockquote {
+    font-style: italic;
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1.7;
+}
+
+.tutors-message p {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+/* ======================================================
+   LEARNING EXPERIENCE SECTION
+   ====================================================== */
+#learning-experience {
+    background-color: var(--gray);
+    position: relative;
+}
+
+.learning-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.learning-item {
+    background-color: var(--light);
+    border-radius: 1rem;
+    padding: 3rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    transition: all 0.5s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.learning-item.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.learning-item.hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary);
+}
+
+.learning-icon {
+    width: 6rem;
+    height: 6rem;
+    background-color: rgba(79, 176, 255, 0.1);
+    color: var(--primary);               
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    transition: all 0.5s ease;
+}
+
+.learning-icon:hover {
+    background-color: rgba(79, 176, 255, 0.3);
+    color: var(--light);
+}
+
+.learning-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.learning-text h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.learning-text p {
+    font-size: 1rem;
+    color: var(--dark);
+    line-height: 1.5;
+}
+
+.learning-text .learn-more {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--primary);
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.learning-text .learn-more:hover {
+    color: var(--light);
+}
+
+.learning-text .learn-more .arrow {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.learning-text .learn-more .arrow:hover {
+    background-color: var(--light);
+}
+/* ======================================================
+   TEAM TESTIMONIALS SECTION
+   ====================================================== */    
+.team-testimonials {
+    background-color: var(--light);
+    padding: 5rem 0;
+}
+
+.team-testimonials .testimonials {
+    display: flex;
+    gap: 3rem;
+}
+
+.team-testimonials .testimonials .testimonial {
+    flex: 1;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: var(--light);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-testimonials .testimonials .testimonial h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.team-testimonials .testimonials .testimonial p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--dark);
+}
+
+/* ======================================================
+   TEAM MEMBERS SECTION
+   ====================================================== */
+.team-members {
+    background-color: var(--light);
+    padding: 5rem 0;
+}
+
+.team-members .team-member {
+    flex: 1;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: var(--light);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-members .team-member h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.team-members .team-member p {
+    font-size: 0.9rem;
+    line-height: 1.5;       
+    color: var(--dark);
+}  
+

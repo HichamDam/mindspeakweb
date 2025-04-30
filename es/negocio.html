@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Negocio | MindSpeak</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/business.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../images/mindspeak-logo.png" alt="MindSpeak Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="funcionamiento.html">Cómo funciona</a></li>
+                    <li><a href="negocio.html" class="active">Modelo de negocio</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="equipo.html">Equipo</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button onclick="window.location.href='../negoci.html'">CA</button>
+                <button class="active">ES</button>
+                <button onclick="window.location.href='../en/business.html'">EN</button>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section id="page-header">
+        <div class="container">
+            <h1>Modelo de Negocio</h1>
+            <p>Información sobre costes y estrategia de comercialización</p>
+        </div>
+    </section>
+
+    <!-- Business Model Section -->
+    <section id="business-model">
+        <div class="container">
+            <div class="section-header">
+                <h2>Costes y Financiación</h2>
+                <p>Transparencia en los costes e inversión necesaria para el desarrollo de MindSpeak</p>
+            </div>
+            
+            <div class="business-content">
+                <div class="cost-breakdown">
+                    <h3>Desglose de Costes</h3>
+                    
+                    <div class="cost-card">
+                        <div class="cost-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="cost-details">
+                            <h4>Desarrollo (3 meses)</h4>
+                            <p class="cost-value">2.600€</p>
+                            <p class="cost-desc">65 horas estimadas x 40€/h</p>
+                            <p>Incluye programación, diseño de interfaz y pruebas de usabilidad.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cost-card">
+                        <div class="cost-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="cost-details">
+                            <h4>Infraestructura Cloud (anual)</h4>
+                            <p class="cost-value">300€ - 600€/año</p>
+                            <p class="cost-desc">Escalable según número de usuarios</p>
+                            <p>Servidores Firebase/Supabase para almacenamiento de datos y autenticación.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cost-card">
+                        <div class="cost-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="cost-details">
+                            <h4>Espacio de Trabajo (3 meses)</h4>
+                            <p class="cost-value">1.050€</p>
+                            <p class="cost-desc">Oficina coworking: 900€ (300€/mes x 3 meses)</p>
+                            <p class="cost-desc">Licencias de software: 150€ (Android Studio, Figma Pro, etc.)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cost-card">
+                        <div class="cost-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="cost-details">
+                            <h4>Mantenimiento (primer año)</h4>
+                            <p class="cost-value">1.500€</p>
+                            <p class="cost-desc">20% del coste de desarrollo</p>
+                            <p>Actualizaciones, correcciones de errores y soporte técnico.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cost-total">
+                        <h4>Total Estimado</h4>
+                        <p class="total-value">5.100€ - 5.800€</p>
+                        <p class="total-note">IVA no incluido</p>
+                    </div>
+                </div>
+
+                <div class="ongoing-costs">
+                    <h3>Costes Anuales de Mantenimiento</h3>
+                    
+                    <div class="ongoing-card">
+                        <div class="ongoing-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="ongoing-details">
+                            <h4>Hosting y Base de Datos</h4>
+                            <p class="ongoing-value">400€ - 800€/año</p>
+                            <p>Según número de usuarios y uso de recursos</p>
+                        </div>
+                    </div>
+                    
+                    <div class="ongoing-card">
+                        <div class="ongoing-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="ongoing-details">
+                            <h4>Actualizaciones de Seguridad</h4>
+                            <p class="ongoing-value">600€/año</p>
+                            <p>Equivalente a 50€/mes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="ongoing-card">
+                        <div class="ongoing-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <div class="ongoing-details">
+                            <h4>Mejoras y Nuevas Funcionalidades</h4>
+                            <p class="ongoing-value">600€/año</p>
+                            <p>Equivalente a 50€/mes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketing Strategy Section -->
+    <section id="marketing-strategy">
+        <div class="container">
+            <div class="section-header">
+                <h2>Estrategia de Comercialización</h2>
+                <p>Cómo planeamos dar a conocer MindSpeak y generar ingresos sostenibles</p>
+            </div>
+            
+            <div class="strategy-content">
+                <div class="revenue-model">
+                    <h3>Modelo de Ingresos</h3>
+                    
+                    <div class="revenue-options">
+                        <div class="revenue-option">
+                            <div class="option-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="option-details">
+                                <h4>Versión Gratuita Individual</h4>
+                                <ul>
+                                    <li>Funcionalidades básicas para usuarios individuales</li>
+                                    <li>Límite de 2 usuarios asignados</li>
+                                    <li>Historial limitado a 30 días</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="revenue-option">
+                            <div class="option-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="option-details">
+                                <h4>Suscripción Familiar</h4>
+                                <p class="option-price">4,99€/mes</p>
+                                <ul>
+                                    <li>Hasta 5 usuarios asignados</li>
+                                    <li>Historial completo ilimitado</li>
+                                    <li>Gráficos y estadísticas avanzadas</li>
+                                    <li>Ejercicios personalizados ilimitados</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="revenue-option">
+                            <div class="option-icon">
+                                <i class="fas fa-school"></i>
+                            </div>
+                            <div class="option-details">
+                                <h4>Licencia para Centros</h4>
+                                <p class="option-price">29,99€/mes</p>
+                                <ul>
+                                    <li>Hasta 30 usuarios asignados</li>
+                                    <li>Todas las funcionalidades Premium</li>
+                                    <li>Consola de administración de múltiples usuarios</li>
+                                    <li>Soporte técnico prioritario</li>
+                                    <li>Personalización de la aplicación</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="marketing-channels">
+                    <h3>Canales de Marketing</h3>
+                    
+                    <div class="channels-grid">
+                        <div class="channel-card">
+                            <div class="channel-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h4>Colaboraciones Educativas</h4>
+                            <p>Asociaciones estratégicas con escuelas y centros especializados en TEA para ofrecer pruebas gratuitas y recoger feedback.</p>
+                        </div>
+                        
+                        <div class="channel-card">
+                            <div class="channel-icon">
+                                <i class="fas fa-hospital"></i>
+                            </div>
+                            <h4>Sector Sanitario</h4>
+                            <p>Presentación de la aplicación a profesionales de salud mental y terapeutas especializados en TEA para recomendaciones a pacientes.</p>
+                        </div>
+                        
+                        <div class="channel-card">
+                            <div class="channel-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h4>Redes Sociales Especializadas</h4>
+                            <p>Presencia en grupos y comunidades dedicadas a la salud mental, TEA y educación especial.</p>
+                        </div>
+                        
+                        <div class="channel-card">
+                            <div class="channel-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h4>Participación en Eventos</h4>
+                            <p>Asistencia a ferias, congresos y eventos relacionados con salud mental, educación especial y tecnología.</p>
+                        </div>
+                        
+                        <div class="channel-card">
+                            <div class="channel-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h4>SEO y Marketing de Contenidos</h4>
+                            <p>Blog especializado con artículos sobre TEA, comunicación emocional y tecnología asistencial.</p>
+                        </div>
+                        
+                        <div class="channel-card">
+                            <div class="channel-icon">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <h4>Programa de Embajadores</h4>
+                            <p>Colaboración con profesionales y familias que ya utilizan la aplicación para compartir experiencias reales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projected Growth Section -->
+    <section id="projected-growth">
+        <div class="container">
+            <div class="section-header">
+                <h2>Crecimiento Proyectado</h2>
+                <p>Previsión de crecimiento y rentabilidad a tres años vista</p>
+            </div>
+            
+            <div class="growth-chart-container">
+                <canvas id="growthChart"></canvas>
+            </div>
+            
+            <div class="growth-milestones">
+                <div class="milestone">
+                    <div class="milestone-marker">1</div>
+                    <div class="milestone-content">
+                        <h4>Año 1: Establecimiento</h4>
+                        <p>Lanzamiento de la aplicación, conseguir 500 usuarios activos y establecer colaboraciones con 10 centros educativos.</p>
+                    </div>
+                </div>
+                
+                <div class="milestone">
+                    <div class="milestone-marker">2</div>
+                    <div class="milestone-content">
+                        <h4>Año 2: Crecimiento</h4>
+                        <p>Expansión a 2.000 usuarios activos, implementación de nuevas funcionalidades basadas en feedback y traducción a más idiomas.</p>
+                    </div>
+                </div>
+                
+                <div class="milestone">
+                    <div class="milestone-marker">3</div>
+                    <div class="milestone-content">
+                        <h4>Año 3: Consolidación</h4>
+                        <p>Alcanzar 5.000 usuarios activos, punto de equilibrio financiero y posibilidad de expansión internacional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners">
+        <div class="container">
+            <div class="section-header">
+                <h2>Colaboradores Potenciales</h2>
+                <p>Entidades y organizaciones con las que buscamos establecer alianzas estratégicas</p>
+            </div>
+            
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <img src="../images/partners/partner1.png" alt="Logo partner educativo">
+                    <h4>Centros Educativos</h4>
+                    <p>Escuelas y centros de educación especial que trabajan con alumnos con TEA.</p>
+                </div>
+    
+                <div class="partner-card">
+                    <img src="../images/partners/partner3.png" alt="Logo asociación TEA">
+                    <h4>Asociaciones TEA</h4>
+                    <p>Entidades que apoyan a familias y personas con trastorno del espectro autista.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta">
+        <div class="container">
+            <h2>¿Interesado en invertir o colaborar?</h2>
+            <p>Si quieres formar parte de este proyecto o necesitas más información sobre nuestro modelo de negocio, contacta con nosotros.</p>
+            <div class="cta-buttons">
+                <a href="../downloads/mindspeak-business-plan.pdf" class="btn btn-secondary">Descargar Plan de Negocio</a>
+                <a href="contacto.html" class="btn btn-primary">Contáctanos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../images/mindspeak-logo-white.png" alt="MindSpeak Logo">
+                    <p>Haciendo visibles las emociones</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h3>Navegación</h3>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="funcionamiento.html">Cómo funciona</a></li>
+                            <li><a href="negocio.html">Modelo de negocio</a></li>
+                            <li><a href="media.html">Media</a></li>
+                            <li><a href="equipo.html">Equipo</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Síguenos</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-envelope"></i> info@mindspeak-app.com</p>
+                    <p><i class="fas fa-phone"></i> +34 93 123 45 67</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MindSpeak. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="privacidad.html">Política de privacidad</a>
+                    <a href="terminos.html">Términos de uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/business.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</body>
+</html>

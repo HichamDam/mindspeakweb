@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mèdia | MindSpeak</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/mindspeak-logo.png" alt="MindSpeak Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html">Inici</a></li>
+                    <li><a href="funcionament.html">Com funciona</a></li>
+                    <li><a href="negoci.html">Model de negoci</a></li>
+                    <li><a href="media.html" class="active">Mèdia</a></li>
+                    <li><a href="equip.html">Equip</a></li>
+                    <li><a href="contacte.html">Contacte</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button class="active">CA</button>
+                <button onclick="window.location.href='es/media.html'">ES</button>
+                <button onclick="window.location.href='en/media.html'">EN</button>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section id="page-header">
+        <div class="container">
+            <h1>Galeria Multimèdia</h1>
+            <p>Vídeos, captures de pantalla i recursos visuals de MindSpeak</p>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="promo-video">
+        <div class="container">
+            <div class="section-header">
+                <h2>Vídeo Promocional</h2>
+                <p>Descobreix MindSpeak en acció i com ajuda a les persones amb TEA</p>
+            </div>
+            
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <iframe id="promo-video-iframe" src="https://www.youtube.com/embed/BpBfsENTQfc?si=_MrN8vNl2gbBbo1x?rel=0" title="Vídeo promocional de MindSpeak" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="video-controls">
+                    <button id="quick-preview" class="btn btn-secondary">
+                        <i class="fas fa-bolt"></i> Previsualització Ràpida (30s)
+                    </button>
+                    <div class="video-description">
+                        <h3>MindSpeak: Comunicació Emocional per a Persones amb TEA</h3>
+                        <p>Aquest vídeo mostra com la nostra aplicació MindSpeak facilita l'expressió d'emocions i millora la comunicació entre persones amb TEA i els seus supervisors o familiars. Podràs veure exemples reals d'ús i testimonis de persones que ja utilitzen l'aplicació.</p>
+                        <p><strong>Durada:</strong> 1 minut</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Gallery -->
+    <section id="screenshot-gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Captures de Pantalla</h2>
+                <p>Explora la interfície i funcionalitats de MindSpeak</p>
+            </div>
+            
+            <div class="gallery-tabs">
+                <div class="tab-headers">
+                    <button class="tab-btn active" data-tab="user-screens">Usuari</button>
+                    <button class="tab-btn" data-tab="supervisor-screens">Supervisor/Familiar</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="user-screens">
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="images/screens/login.png" alt="Pantalla d'inici de sessió" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Inici de Sessió</h3>
+                                    <p>Accés senzill i segur a l'aplicació</p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item">
+                                <img src="images/screens/emotions.png" alt="Llista d'emocions" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Selecció d'Emocions</h3>
+                                    <p>Interfície visual per escollir una emoció</p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item">
+                                <img src="images/screens/describe.png" alt="Valoració d'emoció" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Intensitat d'Emoció</h3>
+                                    <p>Especificació de nivell emocional</p>
+                                    <p>Espai per explicar per què se sent així</p>
+                                </div>
+                            </div>
+                    
+                            <div class="gallery-item">
+                                <img src="images/screens/history.png" alt="Historial d'emocions" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Historial d'Emocions</h3>
+                                    <p>Registre cronològic d'emocions</p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item">
+                                <img src="images/screens/exercises-disp.png" alt="Llista d'exercicis" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Exercicis Disponibles</h3>
+                                    <p>Recursos per gestionar emocions</p>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/screens/make-exercises.png" alt="Descripció d'emoció" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Example d'Exercici </h3>
+                                    <p>Espai per fer exercicis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="supervisor-screens">
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="images/screens/supervisor-home.png" alt="Pantalla principal del supervisor" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Pantalla Principal</h3>
+                                    <p>Visió general de funcionalitats</p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item">
+                                <img src="images/screens/alerts.png" alt="Alertes d'emocions" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Alertes d'Emocions</h3>
+                                    <p>Notificacions de noves emocions registrades</p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item">
+                                <img src="images/screens/emotion-detail.png" alt="Detall d'emoció" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Detall d'Emoció</h3>
+                                    <p>Informació completa d'una emoció registrada</p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item">
+                                <img src="images/screens/charts.png" alt="Gràfics d'emocions" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Gràfics d'Emocions</h3>
+                                    <p>Anàlisi visual de tendències emocionals</p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item">
+                                <img src="images/screens/upload-exercise.png" alt="Pujar exercici" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Afegir Exercici</h3>
+                                    <p>Creació de recursos personalitzats</p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item">
+                                <img src="images/screens/create-user.png" alt="Crear usuari" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Gestió d'Usuaris</h3>
+                                    <p>Creació i administració de comptes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="use-cases">
+        <div class="container">
+            <div class="section-header">
+                <h2>Casos d'Ús</h2>
+                <p>Escenaris en què MindSpeak pot marcar la diferència</p>
+            </div>
+            
+            <div class="use-cases-grid">
+                <div class="use-case">
+                    <div class="use-case-image">
+                        <img src="images/use-cases/school.jpg" alt="Entorn escolar">
+                    </div>
+                    <div class="use-case-content">
+                        <h3>Entorn Escolar</h3>
+                        <p>MindSpeak ajuda els alumnes amb TEA a comunicar el seu estat emocional als professors i personal de suport, facilitant una millor integració i seguiment durant la jornada escolar.</p>
+                        <div class="quote">
+                            <blockquote>"L'aplicació ha permès a l'Àlex comunicar-nos quan se sent ansiós a classe, permetent-nos anticipar i prevenir situacions d'estrès."</blockquote>
+                            <cite>— Maria Puig, Professora d'Educació Especial</cite>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="use-case">
+                    <div class="use-case-image">
+                        <img src="images/use-cases/home.jpg" alt="Entorn familiar">
+                    </div>
+                    <div class="use-case-content">
+                        <h3>Entorn Familiar</h3>
+                        <p>A casa, MindSpeak facilita la comunicació emocional entre pares i fills, ajudant a identificar desencadenants d'emocions negatives i a reforçar moments positius.</p>
+                        <div class="quote">
+                            <blockquote>"Per primera vegada, el nostre fill pot expressar-nos quan se sent sobreestimulat sense haver de passar per una crisi."</blockquote>
+                            <cite>— Família Roig Martí</cite>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="use-case">
+                    <div class="use-case-image">
+                        <img src="images/use-cases/therapy.jpg" alt="Sessions terapèutiques">
+                    </div>
+                    <div class="use-case-content">
+                        <h3>Sessions Terapèutiques</h3>
+                        <p>Els terapeutes utilitzen MindSpeak com a eina de seguiment entre sessions, permetent analitzar tendències emocionals i adaptar les intervencions segons les necessitats específiques.</p>
+                        <div class="quote">
+                            <blockquote>"L'històric d'emocions em proporciona informació valuosa per preparar les sessions i avaluar el progrés."</blockquote>
+                            <cite>— Dr. Ferran Costa, Psicòleg Especialista en TEA</cite>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="use-case">
+                    <div class="use-case-image">
+                        <img src="images/use-cases/social.jpg" alt="Entorns socials">
+                    </div>
+                    <div class="use-case-content">
+                        <h3>Entorns Socials</h3>
+                        <p>En situacions socials, MindSpeak ofereix una manera discreta d'expressar emocions quan la comunicació verbal resulta difícil, facilitant la interacció amb amics i coneguts.</p>
+                        <div class="quote">
+                            <blockquote>"Ara la Júlia pot participar en activitats de grup amb més confiança perquè pot comunicar com se sent en tot moment."</blockquote>
+                            <cite>— Montse Vila, Coordinadora d'Activitats</cite>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infographics Section -->
+    <section id="infographics">
+        <div class="container">
+            <div class="section-header">
+                <h2>Infografies i Recursos</h2>
+                <p>Materials visuals sobre MindSpeak i comunicació emocional en TEA</p>
+            </div>
+            
+            <div class="infographics-grid">
+                <div class="infographic-card">
+                    <div class="infographic-image">
+                        <img src="images/infographics/emotions-guide.png" alt="Guia d'emocions">
+                    </div>
+                    <div class="infographic-content">
+                        <h3>Guia d'Emocions</h3>
+                        <p>Infografia que explica les emocions bàsiques i com identificar-les.</p>
+                        <a href="downloads/emocions-guia.pdf" class="btn btn-small">Descarregar PDF</a>
+                    </div>
+                </div>
+                
+                <div class="infographic-card">
+                    <div class="infographic-image">
+                        <img src="images/infographics/app-features.png" alt="Funcionalitats de l'app">
+                    </div>
+                    <div class="infographic-content">
+                        <h3>Funcionalitats de MindSpeak</h3>
+                        <p>Resum visual de totes les característiques de l'aplicació.</p>
+                        <a href="downloads/funcionalitats-mindspeak.pdf" class="btn btn-small">Descarregar PDF</a>
+                    </div>
+                </div>
+                
+                <div class="infographic-card">
+                    <div class="infographic-image">
+                        <img src="images/infographics/communication-tips.png" alt="Consells de comunicació">
+                    </div>
+                    <div class="infographic-content">
+                        <h3>Consells de Comunicació</h3>
+                        <p>Recomanacions per millorar la comunicació amb persones amb TEA.</p>
+                        <a href="downloads/consells-comunicacio.pdf" class="btn btn-small">Descarregar PDF</a>
+                    </div>
+                </div>
+                
+                <div class="infographic-card">
+                    <div class="infographic-image">
+                        <img src="images/infographics/emotional-regulation.png" alt="Regulació emocional">
+                    </div>
+                    <div class="infographic-content">
+                        <h3>Regulació Emocional</h3>
+                        <p>Tècniques i estratègies per gestionar les emocions intenses.</p>
+                        <a href="downloads/regulacio-emocional.pdf" class="btn btn-small">Descarregar PDF</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Press Kit Section -->
+    <section id="press-kit">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kit de Premsa</h2>
+                <p>Recursos per a mitjans de comunicació i col·laboradors</p>
+            </div>
+            
+            <div class="press-kit-content">
+                <div class="press-kit-description">
+                    <p>Posem a la vostra disposició un conjunt complet de recursos per facilitar la cobertura de MindSpeak. El nostre kit de premsa inclou logotips d'alta resolució, imatges promocionals, informació detallada sobre l'aplicació i notes de premsa.</p>
+                    <p>Si sou periodistes, bloggers, educadors o professionals de salut mental interessats en MindSpeak, aquests materials us ajudaran a compartir informació precisa i atractiva sobre la nostra aplicació.</p>
+                </div>
+                
+                <div class="press-kit-downloads">
+                    <a href="downloads/press-kit/logos.zip" class="press-kit-item">
+                        <i class="fas fa-image"></i>
+                        <span>Logotips</span>
+                        <small>PNG, SVG, EPS</small>
+                    </a>
+                    
+                    <a href="downloads/press-kit/screenshots.zip" class="press-kit-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Captures de Pantalla</span>
+                        <small>PNG alta resolució</small>
+                    </a>
+                    
+                    <a href="downloads/press-kit/photos.zip" class="press-kit-item">
+                        <i class="fas fa-camera"></i>
+                        <span>Fotos Promocionals</span>
+                        <small>JPG alta resolució</small>
+                    </a>
+                    
+                    <a href="downloads/press-kit/press-release.pdf" class="press-kit-item">
+                        <i class="fas fa-newspaper"></i>
+                        <span>Nota de Premsa</span>
+                        <small>PDF</small>
+                    </a>
+                    
+                    <a href="downloads/press-kit/fact-sheet.pdf" class="press-kit-item">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Fulls de Dades</span>
+                        <small>PDF</small>
+                    </a>
+                    
+                    <a href="downloads/press-kit/all.zip" class="press-kit-item">
+                        <i class="fas fa-download"></i>
+                        <span>Kit Complet</span>
+                        <small>ZIP (56MB)</small>
+                    </a>
+                </div>
+                
+                <div class="press-contact">
+                    <h3>Contacte de Premsa</h3>
+                    <p>Per a sol·licituds d'entrevistes, informació addicional o material personalitzat, si us plau contacteu amb:</p>
+                    <p><strong>Alex Martinez</strong> - Responsable de Comunicació</p>
+                    <p><i class="fas fa-envelope"></i> premsa@mindspeak-app.com</p>
+                    <p><i class="fas fa-phone"></i> +34 93 123 45 68</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta">
+        <div class="container">
+            <h2>Prova MindSpeak avui mateix</h2>
+            <p>Descarrega l'aplicació i descobreix com pot transformar la comunicació emocional.</p>
+            <div class="cta-buttons">
+                <a href="downloads/mindspeak-prototype.apk" class="btn btn-primary">Descarregar App</a>
+                <a href="contacte.html" class="btn btn-secondary">Contacta'ns</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/mindspeak-logo-white.png" alt="MindSpeak Logo">
+                    <p>Fent les emocions visibles</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h3>Navegació</h3>
+                        <ul>
+                            <li><a href="index.html">Inici</a></li>
+                            <li><a href="funcionament.html">Com funciona</a></li>
+                            <li><a href="negoci.html">Model de negoci</a></li>
+                            <li><a href="media.html">Mèdia</a></li>
+                            <li><a href="equip.html">Equip</a></li>
+                            <li><a href="contacte.html">Contacte</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Segueix-nos</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contacte</h3>
+                    <p><i class="fas fa-envelope"></i> info@mindspeak-app.com</p>
+                    <p><i class="fas fa-phone"></i> +34 93 123 45 67</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MindSpeak. Tots els drets reservats.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Política de privacitat</a>
+                    <a href="terms.html">Termes d'ús</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/media.js"></script>

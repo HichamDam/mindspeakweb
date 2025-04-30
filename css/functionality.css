@@ -1,0 +1,399 @@
+/*
+ * MindSpeak - Functionality Page Specific Styles
+ * Version: 1.0.0
+ * Author: MindSpeak Team
+ */
+
+/* ======================================================
+   TABS STYLES
+   ====================================================== */
+   .tabs {
+    margin-bottom: 6rem;
+}
+
+.tab-headers {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 1rem;
+}
+
+.tab-btn {
+    padding: 1.2rem 2.4rem;
+    background-color: var(--gray);
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--gray-dark);
+}
+
+.tab-btn.active {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.tab-btn:hover:not(.active) {
+    background-color: #e0e0e0;
+}
+
+.tab-content {
+    position: relative;
+    min-height: 30rem;
+}
+
+.tab-pane {
+    display: none;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ======================================================
+   USER FLOW DIAGRAM
+   ====================================================== */
+.flow-diagram {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.flow-step {
+    flex: 1;
+    min-width: 22rem;
+    background-color: var(--light);
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.flow-step.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.flow-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -2rem;
+    width: 2rem;
+    height: 2px;
+    background-color: var(--primary);
+    z-index: 1;
+}
+
+.flow-icon {
+    width: 6rem;
+    height: 6rem;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(79, 176, 255, 0.1);
+    color: var(--primary);
+    font-size: 2.4rem;
+}
+
+.flow-step h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.flow-step p {
+    color: var(--gray-dark);
+    margin-bottom: 2rem;
+}
+
+.flow-step img {
+    width: 100%;
+    max-width: 25rem;
+    margin: 0 auto;
+    border-radius: 0.8rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.flow-step:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ======================================================
+   FEATURES DETAIL SECTION
+   ====================================================== */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.feature-card {
+    background-color: var(--light);
+    border-radius: 1rem;
+    padding: 3rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary);
+}
+
+.feature-icon {
+    width: 7rem;
+    height: 7rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(79, 176, 255, 0.1);
+    color: var(--primary);
+    font-size: 2.8rem;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.feature-card h3 {
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+}
+
+.feature-card p {
+    color: var(--gray-dark);
+    margin-bottom: 2rem;
+}
+
+.feature-card ul {
+    list-style: disc;
+    padding-left: 2rem;
+    margin-bottom: 0;
+}
+
+.feature-card ul li {
+    color: var(--gray-dark);
+    margin-bottom: 0.8rem;
+}
+
+.feature-card ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* ======================================================
+   TECH INSIGHT SECTION
+   ====================================================== */
+.tech-details {
+    display: flex;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.tech-text {
+    flex: 1;
+}
+
+.tech-text h3 {
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+}
+
+.tech-list {
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.tech-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+}
+
+.tech-list li:last-child {
+    border-bottom: none;
+}
+
+.tech-list li span {
+    font-weight: 600;
+    min-width: 10rem;
+    color: var(--primary);
+}
+
+.code-preview {
+    margin-top: 3rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.code-header {
+    background-color: #2d2d2d;
+    color: var(--light);
+    padding: 1rem 2rem;
+    font-family: monospace;
+    font-size: 1.4rem;
+}
+
+pre {
+    margin: 0;
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 2rem;
+    border-radius: 0 0 0.8rem 0.8rem;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.code-keyword {
+    color: #ff79c6;
+}
+
+.code-type {
+    color: #8be9fd;
+}
+
+.code-string {
+    color: #f1fa8c;
+}
+
+.code-comment {
+    color: #6272a4;
+}
+
+.tech-diagram {
+    flex: 1;
+}
+
+.tech-diagram h3 {
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+}
+
+.tech-diagram img {
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.tech-diagram img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tech-diagram img.zoomed {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
+    max-width: 80vw;
+    max-height: 80vh;
+    z-index: 1001;
+    cursor: zoom-out;
+}
+
+.diagram-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.tech-diagram p {
+    text-align: center;
+    color: var(--gray-dark);
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+/* ======================================================
+   RESPONSIVE DESIGN
+   ====================================================== */
+@media (max-width: 992px) {
+    .tech-details {
+        flex-direction: column;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .flow-diagram {
+        flex-direction: column;
+    }
+    
+    .flow-step {
+        width: 100%;
+    }
+    
+    .flow-step:not(:last-child)::after {
+        top: auto;
+        right: 50%;
+        bottom: -2rem;
+        width: 2px;
+        height: 2rem;
+        transform: translateX(50%);
+    }
+    
+    .tab-headers {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    pre {
+        font-size: 1.2rem;
+    }
+    
+    .feature-card {
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media | MindSpeak</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../images/mindspeak-logo.png" alt="MindSpeak Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="business-model.html">Business Model</a></li>
+                    <li><a href="media.html" class="active">Media</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button onclick="window.location.href='../media.html'">CA</button>
+                <button onclick="window.location.href='../es/media.html'">ES</button>
+                <button class="active">EN</button>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section id="page-header">
+        <div class="container">
+            <h1>Media Gallery</h1>
+            <p>Videos, screenshots, and visual resources of MindSpeak</p>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="promo-video">
+        <div class="container">
+            <div class="section-header">
+                <h2>Promotional Video</h2>
+                <p>Discover MindSpeak in action and how it helps people with ASD</p>
+            </div>
+            
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <iframe id="promo-video-iframe" src="https://www.youtube.com/embed/BpBfsENTQfc?si=_MrN8vNl2gbBbo1x?rel=0" title="MindSpeak promotional video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="video-controls">
+                    <button id="quick-preview" class="btn btn-secondary">
+                        <i class="fas fa-bolt"></i> Quick Preview (30s)
+                    </button>
+                    <div class="video-description">
+                        <h3>MindSpeak: Emotional Communication for People with ASD</h3>
+                        <p>This video shows how our MindSpeak application facilitates the expression of emotions and improves communication between people with ASD and their supervisors or family members. You will see real-world examples and testimonials from people already using the app.</p>
+                        <p><strong>Duration:</strong> 1 minute</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Gallery -->
+    <section id="screenshot-gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Screenshots</h2>
+                <p>Explore the interface and features of MindSpeak</p>
+            </div>
+            
+            <div class="gallery-tabs">
+                <div class="tab-headers">
+                    <button class="tab-btn active" data-tab="user-screens">User</button>
+                    <button class="tab-btn" data-tab="supervisor-screens">Supervisor/Family</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="user-screens">
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="../images/screens/login.png" alt="Login screen" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Login</h3>
+                                    <p>Simple and secure access to the application</p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item">
+                                <img src="../images/screens/emotions.png" alt="Emotions list" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Emotion Selection</h3>
+                                    <p>Visual interface to choose an emotion</p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item">
+                                <img src="../images/screens/describe.png" alt="Emotion rating" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Emotion Intensity</h3>
+                                    <p>Specification of emotional level</p>
+                                    <p>Space to explain why they feel this way</p>
+                                </div>
+                            </div>
+                            
+                           
+                            
+                            <div class="gallery-item">
+                                <img src="../images/screens/history.png" alt="Emotions history" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Emotion History</h3>
+                                    <p>Chronological record of emotions</p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item">
+                                <img src="../images/screens/exercises-disp.png" alt="Exercises list" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Available Exercises</h3>
+                                    <p>Resources for managing emotions</p>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="../images/screens/make-exercises.png" alt="Emotion description" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>make Exercises</h3>
+                                    <p>Space to make exercises</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="supervisor-screens">
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="../images/screens/supervisor-home.png" alt="Supervisor home screen" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Home Screen</h3>
+                                    <p>Overview of functionalities</p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item">
+                                <img src="../images/screens/alerts.png" alt="Emotion alerts" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Emotion Alerts</h3>
+                                    <p>Notifications of newly registered emotions</p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item">
+                                <img src="../images/screens/emotion-detail.png" alt="Emotion detail" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Emotion Detail</h3>
+                                    <p>Complete information about a registered emotion</p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item">
+                                <img src="../images/screens/charts.png" alt="Emotion charts" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Emotion Charts</h3>
+                                    <p>Visual analysis of emotional trends</p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item">
+                                <img src="../images/screens/upload-exercise.png" alt="Upload exercise" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>Add Exercise</h3>
+                                    <p>Creation of customized resources</p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item">
+                                <img src="../images/screens/create-user.png" alt="Create user" class="gallery-image">
+                                <div class="gallery-overlay">
+                                    <h3>User Management</h3>
+                                    <p>Creation and administration of accounts</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="use-cases">
+        <div class="container">
+            <div class="section-header">
+                <h2>Use Cases</h2>
+                <p>Scenarios where MindSpeak can make a difference</p>
+            </div>
+            
+            <div class="use-cases-grid">
+                <div class="use-case">
+                    <div class="use-case-image">
+                        <img src="../images/use-cases/school.jpg" alt="School environment">
+                    </div>
+                    <div class="use-case-content">
+                        <h3>School Environment</h3>
+                        <p>MindSpeak helps students with ASD communicate their emotional state to teachers and support staff, facilitating better integration and monitoring during the school day.</p>
+                        <div class="quote">
+                            <blockquote>"The application has allowed Alex to communicate when he feels anxious in class, enabling us to anticipate and prevent stressful situations."</blockquote>
+                            <cite>— Maria Puig, Special Education Teacher</cite>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="use-case">
+                    <div class="use-case-image">
+                        <img src="../images/use-cases/home.jpg" alt="Home environment">
+                    </div>
+                    <div class="use-case-content">
+                        <h3>Home Environment</h3>
+                        <p>At home, MindSpeak facilitates emotional communication between parents and children, helping to identify triggers for negative emotions and reinforce positive moments.</p>
+                        <div class="quote">
+                            <blockquote>"For the first time, our son can express when he feels overstimulated without having to go through a crisis."</blockquote>
+                            <cite>— Roig Martí Family</cite>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="use-case">
+                    <div class="use-case-image">
+                        <img src="../images/use-cases/therapy.jpg" alt="Therapy sessions">
+                    </div>
+                    <div class="use-case-content">
+                        <h3>Therapy Sessions</h3>
+                        <p>Therapists use MindSpeak as a monitoring tool between sessions, allowing them to analyze emotional trends and adapt interventions according to specific needs.</p>
+                        <div class="quote">
+                            <blockquote>"The emotional history provides me with valuable information to prepare sessions and evaluate progress."</blockquote>
+                            <cite>— Dr. Ferran Costa, Psychologist Specializing in ASD</cite>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="use-case">
+                    <div class="use-case-image">
+                        <img src="../images/use-cases/social.jpg" alt="Social environments">
+                    </div>
+                    <div class="use-case-content">
+                        <h3>Social Environments</h3>
+                        <p>In social situations, MindSpeak offers a discreet way to express emotions when verbal communication is difficult, facilitating interaction with friends and acquaintances.</p>
+                        <div class="quote">
+                            <blockquote>"Now Julia can participate in group activities with more confidence because she can communicate how she feels at all times."</blockquote>
+                            <cite>— Montse Vila, Activities Coordinator</cite>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infographics Section -->
+    <section id="infographics">
+        <div class="container">
+            <div class="section-header">
+                <h2>Infographics and Resources</h2>
+                <p>Visual materials about MindSpeak and emotional communication in ASD</p>
+            </div>
+            
+            <div class="infographics-grid">
+                <div class="infographic-card">
+                    <div class="infographic-image">
+                        <img src="../images/infographics/emotions-guide.png" alt="Emotions guide">
+                    </div>
+                    <div class="infographic-content">
+                        <h3>Emotions Guide</h3>
+                        <p>Infographic explaining basic emotions and how to identify them.</p>
+                        <a href="../downloads/emotions-guide.pdf" class="btn btn-small">Download PDF</a>
+                    </div>
+                </div>
+                
+                <div class="infographic-card">
+                    <div class="infographic-image">
+                        <img src="../images/infographics/app-features.png" alt="App features">
+                    </div>
+                    <div class="infographic-content">
+                        <h3>MindSpeak Features</h3>
+                        <p>Visual summary of all the application's features.</p>
+                        <a href="../downloads/mindspeak-features.pdf" class="btn btn-small">Download PDF</a>
+                    </div>
+                </div>
+                
+                <div class="infographic-card">
+                    <div class="infographic-image">
+                        <img src="../images/infographics/communication-tips.png" alt="Communication tips">
+                    </div>
+                    <div class="infographic-content">
+                        <h3>Communication Tips</h3>
+                        <p>Recommendations for improving communication with people with ASD.</p>
+                        <a href="../downloads/communication-tips.pdf" class="btn btn-small">Download PDF</a>
+                    </div>
+                </div>
+                
+                <div class="infographic-card">
+                    <div class="infographic-image">
+                        <img src="../images/infographics/emotional-regulation.png" alt="Emotional regulation">
+                    </div>
+                    <div class="infographic-content">
+                        <h3>Emotional Regulation</h3>
+                        <p>Techniques and strategies for managing intense emotions.</p>
+                        <a href="../downloads/emotional-regulation.pdf" class="btn btn-small">Download PDF</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Press Kit Section -->
+    <section id="press-kit">
+        <div class="container">
+            <div class="section-header">
+                <h2>Press Kit</h2>
+                <p>Resources for media and collaborators</p>
+            </div>
+            
+            <div class="press-kit-content">
+                <div class="press-kit-description">
+                    <p>We provide a complete set of resources to facilitate coverage of MindSpeak. Our press kit includes high-resolution logos, promotional images, detailed information about the application, and press releases.</p>
+                    <p>If you are journalists, bloggers, educators, or mental health professionals interested in MindSpeak, these materials will help you share accurate and engaging information about our application.</p>
+                </div>
+                
+                <div class="press-kit-downloads">
+                    <a href="../downloads/press-kit/logos.zip" class="press-kit-item">
+                        <i class="fas fa-image"></i>
+                        <span>Logos</span>
+                        <small>PNG, SVG, EPS</small>
+                    </a>
+                    
+                    <a href="../downloads/press-kit/screenshots.zip" class="press-kit-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Screenshots</span>
+                        <small>High-resolution PNG</small>
+                    </a>
+                    
+                    <a href="../downloads/press-kit/photos.zip" class="press-kit-item">
+                        <i class="fas fa-camera"></i>
+                        <span>Promotional Photos</span>
+                        <small>High-resolution JPG</small>
+                    </a>
+                    
+                    <a href="../downloads/press-kit/press-release.pdf" class="press-kit-item">
+                        <i class="fas fa-newspaper"></i>
+                        <span>Press Release</span>
+                        <small>PDF</small>
+                    </a>
+                    
+                    <a href="../downloads/press-kit/fact-sheet.pdf" class="press-kit-item">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Fact Sheets</span>
+                        <small>PDF</small>
+                    </a>
+                    
+                    <a href="../downloads/press-kit/all.zip" class="press-kit-item">
+                        <i class="fas fa-download"></i>
+                        <span>Complete Kit</span>
+                        <small>ZIP (56MB)</small>
+                    </a>
+                </div>
+                
+                <div class="press-contact">
+                    <h3>Press Contact</h3>
+                    <p>For interview requests, additional information or custom material, please contact:</p>
+                    <p><strong>Alex Martinez</strong> - Communications Manager</p>
+                    <p><i class="fas fa-envelope"></i> press@mindspeak-app.com</p>
+                    <p><i class="fas fa-phone"></i> +34 93 123 45 68</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta">
+        <div class="container">
+            <h2>Try MindSpeak today</h2>
+            <p>Download the app and discover how it can transform emotional communication.</p>
+            <div class="cta-buttons">
+                <a href="../downloads/mindspeak-prototype.apk" class="btn btn-primary">Download App</a>
+                <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../images/mindspeak-logo-white.png" alt="MindSpeak Logo">
+                    <p>Making emotions visible</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="how-it-works.html">How It Works</a></li>
+                            <li><a href="business-model.html">Business Model</a></li>
+                            <li><a href="media.html">Media</a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> info@mindspeak-app.com</p>
+                    <p><i class="fas fa-phone"></i> +34 93 123 45 67</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MindSpeak. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/media.js"></script>
+</body>
+</html>

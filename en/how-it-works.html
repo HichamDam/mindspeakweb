@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How MindSpeak Works | MindSpeak</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/functionality.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../images/mindspeak-logo.png" alt="MindSpeak Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="how-it-works.html" class="active">How it Works</a></li>
+                    <li><a href="business.html">Business Model</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button onclick="window.location.href='../funcionament.html'">CA</button>
+                <button onclick="window.location.href='../es/funcionamiento.html'">ES</button>
+                <button class="active">EN</button>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section id="page-header">
+        <div class="container">
+            <h1>How MindSpeak Works</h1>
+            <p>Discover the features and functionalities of our application</p>
+        </div>
+    </section>
+
+    <!-- User Flow Section -->
+    <section id="user-flow">
+        <div class="container">
+            <div class="section-header">
+                <h2>User Flow</h2>
+                <p>MindSpeak offers personalized experiences for different types of users</p>
+            </div>
+            
+            <div class="tabs">
+                <div class="tab-headers">
+                    <button class="tab-btn active" data-tab="user">ASD User</button>
+                    <button class="tab-btn" data-tab="supervisor">Supervisor/Family Member</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="user-tab">
+                        <div class="flow-diagram">
+                            <div class="flow-step">
+                                <div class="flow-icon">
+                                    <i class="fas fa-sign-in-alt"></i>
+                                </div>
+                                <h3>Log In</h3>
+                                <p>Simple access with username and password</p>
+                                <img src="../images/screens/login.png" alt="Login screen">
+                            </div>
+                            <div class="flow-step">
+                                <div class="flow-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <h3>Express Emotion</h3>
+                                <p>Visual selection of emotions with intensity levels</p>
+                                <img src="../images/screens/emotions.png" alt="Emotions screen">
+                            </div>
+                            <div class="flow-step">
+                                <div class="flow-icon">
+                                    <i class="fas fa-comment-alt"></i>
+                                </div>
+                                <h3>Describe Emotion</h3>
+                                <p>Add optional context or explanation</p>
+                                <img src="../images/screens/describe.png" alt="Description screen">
+                            </div>
+                            <div class="flow-step">
+                                <div class="flow-icon">
+                                    <i class="fas fa-history"></i>
+                                </div>
+                                <h3>Check History</h3>
+                                <p>View previous emotion records</p>
+                                <img src="../images/screens/history.png" alt="History screen">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="supervisor-tab">
+                        <div class="flow-diagram">
+                            <div class="flow-step">
+                                <div class="flow-icon">
+                                    <i class="fas fa-sign-in-alt"></i>
+                                </div>
+                                <h3>Log In</h3>
+                                <p>Access as supervisor or family member</p>
+                                <img src="../images/screens/login-supervisor.png" alt="Supervisor login screen">
+                            </div>
+                            <div class="flow-step">
+                                <div class="flow-icon">
+                                    <i class="fas fa-bell"></i>
+                                </div>
+                                <h3>Receive Alerts</h3>
+                                <p>Notifications when the user records emotions</p>
+                                <img src="../images/screens/alerts.png" alt="Alerts screen">
+                            </div>
+                            <div class="flow-step">
+                                <div class="flow-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h3>View Charts</h3>
+                                <p>Analysis of emotional trends</p>
+                                <img src="../images/screens/charts.png" alt="Charts screen">
+                            </div>
+                            <div class="flow-step">
+                                <div class="flow-icon">
+                                    <i class="fas fa-file-upload"></i>
+                                </div>
+                                <h3>Add Exercises</h3>
+                                <p>Upload custom resources</p>
+                                <img src="../images/screens/upload-exercise.png" alt="Exercises screen">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Detail Section -->
+    <section id="features-detail">
+        <div class="container">
+            <div class="section-header">
+                <h2>Main Features</h2>
+                <p>MindSpeak offers a range of functionalities designed to improve emotional communication</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3>Emotion Selection</h3>
+                    <p>Visual and intuitive interface to select different types of emotions with representative images and associated colors.</p>
+                    <ul>
+                        <li>5 basic emotions: Happy, Sad, Angry, Afraid, Anxious</li>
+                        <li>Intensity indication on a 1-5 scale</li>
+                        <li>Accessible and user-friendly design</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3>Emotional History</h3>
+                    <p>Chronological record of all expressed emotions, with date, time, and description.</p>
+                    <ul>
+                        <li>Display ordered by date</li>
+                        <li>Filtering by emotion type</li>
+                        <li>Access to descriptions and images</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Alert System</h3>
+                    <p>Notifications to supervisors and family members when the user records a new emotion.</p>
+                    <ul>
+                        <li>Real-time alerts</li>
+                        <li>Management of multiple users</li>
+                        <li>Direct access to history</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Data Analysis</h3>
+                    <p>Charts and statistics on recorded emotions to analyze trends and patterns.</p>
+                    <ul>
+                        <li>Distribution of emotions by week</li>
+                        <li>Temporal evolution of each emotion</li>
+                        <li>Identification of recurring patterns</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Customized Exercises</h3>
+                    <p>Resources and activities to help manage emotions, customizable by supervisors.</p>
+                    <ul>
+                        <li>Support for multiple formats (image, video, audio)</li>
+                        <li>Individual or group assignment</li>
+                        <li>Organization by categories</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Privacy and Security</h3>
+                    <p>Protection of users' personal and emotional data with advanced security measures.</p>
+                    <ul>
+                        <li>Secure authentication</li>
+                        <li>Role-based access control</li>
+                        <li>Encryption of sensitive data</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Insight Section -->
+    <section id="tech-insight">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Details</h2>
+                <p>A look at the technology behind MindSpeak</p>
+            </div>
+            
+            <div class="tech-details">
+                <div class="tech-text">
+                    <h3>Technologies Used</h3>
+                    <ul class="tech-list">
+                        <li><span>Frontend:</span> Kotlin with Jetpack Compose for the user interface</li>
+                        <li><span>Backend:</span> Firebase for authentication and real-time database</li>
+                        <li><span>Storage:</span> Supabase for images and multimedia resources</li>
+                        <li><span>Design:</span> Figma for prototyping and interface design</li>
+                    </ul>
+                    
+                    <h3>Architecture</h3>
+                    <p>MindSpeak uses a layered architecture that separates the user interface, business logic, and data access. This modular structure facilitates maintenance and expansion of the application.</p>
+                    
+                    <div class="code-preview">
+                        <div class="code-header">
+                            <span>Code example: Emotion registration</span>
+                        </div>
+                        <pre><code>// Log in
+suspend fun login(
+    email: String,
+    password: String,
+    onSuccess: () -> Unit,
+    onFailure: (String) -> Unit
+) {
+    try {
+        // Authentication via Firebase Auth
+        auth.signInWithEmailAndPassword(email, password).await()
+        onSuccess()
+    } catch (e: Exception) {
+        onFailure(e.message ?: "Unknown error")
+    }
+}
+
+// Get the role of the connected user
+suspend fun getUserRole(): String? {
+    try {
+        val userId = auth.currentUser?.uid ?: return null
+        val documentSnapshot = db.collection("Person").document(userId).get().await()
+        
+        if (documentSnapshot.exists()) {
+            return documentSnapshot.getString("role")
+        }
+    } catch (e: Exception) {
+        println("Error getting role: ${e.message}")
+    }
+    return null
+}</code></pre>
+                    </div>
+                </div>
+                
+                <div class="tech-diagram">
+                    <h3>Architecture Diagram</h3>
+                    <img src="../images/architecture-diagram.png" alt="MindSpeak architecture diagram">
+                    <p>Structure of layers and components of the application</p>
+                    
+                    <h3>Data Model</h3>
+                    <img src="../images/data-model.png" alt="MindSpeak data model">
+                    <p>Relationships between the main entities of the system</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta">
+        <div class="container">
+            <h2>Ready to try MindSpeak?</h2>
+            <p>Download the application now and discover how it can help improve emotional communication.</p>
+            <div class="cta-buttons">
+                <a href="../downloads/mindspeak-prototype.apk" class="btn btn-primary">Download App</a>
+                <a href="downloads/Document-Tècnic-MindSpeak.pdf" class="btn btn-secondary">Download PDF Technical</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../images/mindspeak-logo-white.png" alt="MindSpeak Logo">
+                    <p>Making Emotions Visible</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="how-it-works.html">How it Works</a></li>
+                            <li><a href="business.html">Business Model</a></li>
+                            <li><a href="media.html">Media</a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> info@mindspeak-app.com</p>
+                    <p><i class="fas fa-phone"></i> +34 93 123 45 67</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MindSpeak. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/functionality.js"></script>
+</body>
+</html>

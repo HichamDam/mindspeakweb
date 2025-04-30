@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindSpeak - Haciendo visibles las emociones</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../images/mindspeak-logo.png" alt="MindSpeak Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="funcionamiento.html">Cómo funciona</a></li>
+                    <li><a href="negocio.html">Modelo de negocio</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="equipo.html">Equipo</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button onclick="window.location.href='../index.html'">CA</button>
+                <button class="active">ES</button>
+                <button onclick="window.location.href='../en/index.html'">EN</button>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>MindSpeak</h1>
+                <h2>Haciendo visibles las emociones</h2>
+                <p class="subtitle">Comunicación emocional para personas con TEA</p>
+                <div class="cta-buttons">
+                    <a href="#download" class="btn btn-primary">Descargar App</a>
+                    <a href="#about" class="btn btn-secondary">Saber más</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="../images/hero-illustration.png" alt="MindSpeak App Ilustración">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Qué es MindSpeak?</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>MindSpeak es una aplicación diseñada para ayudar a personas con TEA que tienen dificultades para expresar sus emociones. Nuestra plataforma ofrece una manera intuitiva y visual de comunicar sentimientos, permitiendo a los usuarios seleccionar entre diferentes emociones con varios niveles de intensidad y añadir una descripción de por qué se sienten así.</p>
+                    
+                    <p>Además, la aplicación proporciona herramientas valiosas para supervisores y familiares, que pueden ver notificaciones cuando el usuario registra una emoción, consultar el historial emocional y visualizar gráficos de tendencias a lo largo del tiempo. También pueden asignar ejercicios y recursos personalizados para ayudar a gestionar las emociones.</p>
+                    
+                    <p>Desarrollada por estudiantes del Ciclo Formativo de Grado Superior de Desarrollo de Aplicaciones Multiplataforma, MindSpeak nace del deseo de utilizar la tecnología para mejorar la calidad de vida de las personas con TEA, facilitando la comunicación emocional de una manera cómoda y segura.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                        <h3>Expresión de emociones</h3>
+                        <p>Selección visual e intuitiva de emociones con niveles de intensidad</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h3>Historial emocional</h3>
+                        <p>Consulta de la evolución emocional en cualquier momento</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <h3>Alertas y notificaciones</h3>
+                        <p>Supervisores reciben avisos cuando se expresa una emoción</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Análisis de datos</h3>
+                        <p>Visualización gráfica de tendencias emocionales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download">
+        <div class="container">
+            <div class="download-content">
+                <h2>Prueba MindSpeak ahora</h2>
+                <p>Descarga la versión prototipo de nuestra aplicación y descubre cómo MindSpeak puede ayudar a mejorar la comunicación emocional.</p>
+                <div class="download-buttons">
+                    <a href="../downloads/mindspeak-prototype.apk" class="btn btn-download android">
+                        <i class="fab fa-android"></i>
+                        <span>
+                            <small>Descargar para</small>
+                            Android
+                        </span>
+                    </a>
+                    <a href="#" class="btn btn-download soon">
+                        <i class="fab fa-apple"></i>
+                        <span>
+                            <small>Próximamente para</small>
+                            iOS
+                        </span>
+                    </a>
+                </div>
+                <div class="download-info">
+                    <p>Versión actual: 1.0.0 (Prototipo) | Última actualización: Abril 2025</p>
+                </div>
+            </div>
+            <div class="download-image">
+                <img src="../images/app-screens.png" alt="MindSpeak App Screenshots">
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta">
+        <div class="container">
+            <h2>¿Quieres saber más sobre MindSpeak?</h2>
+            <p>Descubre cómo funciona nuestra aplicación y cómo puede ayudar a las personas con TEA a expresar sus emociones.</p>
+            <div class="cta-buttons">
+                <a href="funcionamiento.html" class="btn btn-secondary">Cómo funciona</a>
+                <a href="contacto.html" class="btn btn-primary">Contáctanos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../images/mindspeak-logo-white.png" alt="MindSpeak Logo">
+                    <p>Haciendo visibles las emociones</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h3>Navegación</h3>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="funcionamiento.html">Cómo funciona</a></li>
+                            <li><a href="negocio.html">Modelo de negocio</a></li>
+                            <li><a href="media.html">Media</a></li>
+                            <li><a href="equipo.html">Equipo</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Síguenos</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-envelope"></i> info@mindspeak-app.com</p>
+                    <p><i class="fas fa-phone"></i> +34 93 123 45 67</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MindSpeak. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="privacidad.html">Política de privacidad</a>
+                    <a href="terminos.html">Términos de uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
