@@ -59,15 +59,7 @@ function initGallery() {
     const modal = document.createElement('div');
     modal.className = 'gallery-modal';
     modal.innerHTML = `
-        <div class="gallery-modal-content">
-            <span class="gallery-modal-close">&times;</span>
-            <img class="gallery-modal-image" src="" alt="">
-            <div class="gallery-modal-caption"></div>
-            <div class="gallery-modal-navigation">
-                <button class="gallery-modal-prev"><i class="fas fa-chevron-left"></i></button>
-                <button class="gallery-modal-next"><i class="fas fa-chevron-right"></i></button>
-            </div>
-        </div>
+        
     `;
     
     document.body.appendChild(modal);

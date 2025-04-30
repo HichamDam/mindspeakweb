@@ -77,7 +77,7 @@
                                     <i class="fas fa-heart"></i>
                                 </div>
                                 <h3>Expresar Emoción</h3>
-                                <p>Selección visual de emociones con intensidad</p>
+                                <p>Selección visual de emociones</p>
                                 <img src="../images/screens/emotions.png" alt="Pantalla de emociones">
                             </div>
                             <div class="flow-step">
@@ -85,7 +85,7 @@
                                     <i class="fas fa-comment-alt"></i>
                                 </div>
                                 <h3>Describir Emoción</h3>
-                                <p>Añadir contexto o explicación opcional</p>
+                                <p>Añadir imagen o vídeo y descripción con intensidad</p>
                                 <img src="../images/screens/describe.png" alt="Pantalla de descripción">
                             </div>
                             <div class="flow-step">
@@ -253,38 +253,9 @@
                     
                     <div class="code-preview">
                         <div class="code-header">
-                            <span>Ejemplo de código: Registro de emociones</span>
+                            <span>Ejemplo de código: Iniciar Sesión</span>
                         </div>
-                        <pre><code>// Iniciar sesión
-suspend fun iniciarSesion(
-    email: String,
-    contraseña: String,
-    onSuccess: () -> Unit,
-    onFailure: (String) -> Unit
-) {
-    try {
-        // Autenticación via Firebase Auth
-        auth.signInWithEmailAndPassword(email, contraseña).await()
-        onSuccess()
-    } catch (e: Exception) {
-        onFailure(e.message ?: "Error desconocido")
-    }
-}
-
-// Obtener el rol del usuario conectado
-suspend fun obtenerRolUsuario(): String? {
-    try {
-        val userId = auth.currentUser?.uid ?: return null
-        val documentSnapshot = db.collection("Persona").document(userId).get().await()
-        
-        if (documentSnapshot.exists()) {
-            return documentSnapshot.getString("rol")
-        }
-    } catch (e: Exception) {
-        println("Error al obtener el rol: ${e.message}")
-    }
-    return null
-}</code></pre>
+                        <img src="../images/code-example.png" alt="Exemple de codi de MindSpeak">
                     </div>
                 </div>
                 
@@ -308,7 +279,7 @@ suspend fun obtenerRolUsuario(): String? {
             <p>Descarga la aplicación ahora y descubre cómo puede ayudar a mejorar la comunicación emocional.</p>
             <div class="cta-buttons">
                 <a href="../downloads/mindspeak-prototype.apk" class="btn btn-primary">Descargar App</a>
-                <a href="downloads/Document-Tècnic-MindSpeak.pdf" class="btn btn-secondary">Descargar Document Tècnic</a>
+                <a href="../downloads/Document-Tècnic-MindSpeak.pdf" class="btn btn-secondary">Descargar Document Tècnic</a>
             </div>
         </div>
     </section>
@@ -346,7 +317,7 @@ suspend fun obtenerRolUsuario(): String? {
                 <div class="footer-contact">
                     <h3>Contacto</h3>
                     <p><i class="fas fa-envelope"></i> info@mindspeak-app.com</p>
-                    <p><i class="fas fa-phone"></i> +34 93 123 45 67</p>
+                    <p><i class="fas fa-phone"></i> +34 972 58 07 93</p>
                 </div>
             </div>
             <div class="footer-bottom">

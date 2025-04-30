@@ -223,6 +223,10 @@
 .download-image {
     flex: 1;
     position: relative;
+    
+    height: 30rem;
+    max-width: 100%;
+    display: flex;
 }
 
 .download-image img {

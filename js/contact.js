@@ -203,6 +203,9 @@ function initFaqs() {
 /**
  * Initialize Map Interaction
  */
+/**
+ * Initialize Map Interaction
+ */
 function initMapInteraction() {
     const map = document.querySelector('.map-container iframe');
     
@@ -211,13 +214,17 @@ function initMapInteraction() {
     // Add placeholder before map loads
     const mapContainer = map.parentNode;
     
+    // Get current language for placeholder text
+    const currentLanguage = getCurrentLanguage();
+    const placeholderText = getMapPlaceholderText(currentLanguage);
+    
     // Create placeholder
     const placeholder = document.createElement('div');
     placeholder.className = 'map-placeholder';
     placeholder.innerHTML = `
         <div class="map-placeholder-content">
             <i class="fas fa-map-marker-alt"></i>
-            <p>Clica per carregar el mapa</p>
+            <p>${placeholderText}</p>
         </div>
     `;
     
@@ -231,6 +238,41 @@ function initMapInteraction() {
         placeholder.remove();
     });
 }
+
+/**
+ * Get current language from URL or HTML lang attribute
+ * @returns {string} - Current language code (ca, es, en)
+ */
+function getCurrentLanguage() {
+    // First check URL path
+    const path = window.location.pathname;
+    if (path.includes('/en/')) return 'en';
+    if (path.includes('/es/')) return 'es';
+    
+    // Then check HTML lang attribute
+    const htmlLang = document.documentElement.lang.toLowerCase();
+    if (htmlLang === 'en') return 'en';
+    if (htmlLang === 'es') return 'es';
+    
+    // Default to Catalan
+    return 'ca';
+}
+
+/**
+ * Get map placeholder text based on language
+ * @param {string} language - Language code (ca, es, en)
+ * @returns {string} - Map placeholder text
+ */
+function getMapPlaceholderText(language) {
+    const texts = {
+        'ca': 'Clica per carregar el mapa',
+        'es': 'Haz clic para cargar el mapa',
+        'en': 'Click to load the map'
+    };
+    
+    return texts[language] || texts['ca']; // Default to Catalan if language not found
+}
+
 
 /**
  * Validate email format
